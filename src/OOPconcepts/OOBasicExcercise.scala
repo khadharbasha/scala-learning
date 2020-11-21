@@ -1,6 +1,6 @@
 package OOPconcepts
 
-object OOBasicExcercise extends App{
+object OOBasicExcercise extends App {
 
   /*
   Novel and the writer
@@ -25,14 +25,16 @@ object OOBasicExcercise extends App{
   novel.copy(2015)
   println(novel.author_age)
 
-  class Writer(FirstName:String, SurName:String, val YearofBirth:Int) {
-    def fullname:String = FirstName + ' ' + SurName
+  class Writer(FirstName: String, SurName: String, val YearofBirth: Int) {
+    def fullname: String = FirstName + ' ' + SurName
   }
 
-  class Novel(name:String, year:Int, author: Writer){
-    def author_age:Int = year - author.YearofBirth
-    def isWrittenBy(author:Writer) = author == this.author
-    def copy(newYear: Int):Novel = new Novel(name, newYear, author)
+  class Novel(name: String, year: Int, author: Writer) {
+    def author_age: Int = year - author.YearofBirth
+
+    def isWrittenBy(author: Writer) = author == this.author
+
+    def copy(newYear: Int): Novel = new Novel(name, newYear, author)
   }
 
   /*
@@ -40,6 +42,7 @@ object OOBasicExcercise extends App{
     - receives - Int has a method
     - Method - current count
     - Method to increament and decrement method to return ==> new counter
+    - overload inc/dec to receive  an amount
    */
 
 }
