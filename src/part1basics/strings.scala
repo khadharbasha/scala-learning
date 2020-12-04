@@ -30,7 +30,7 @@ object strings extends App{
 
   //raw-interplotator
 
-  println(raw"This is a \n line") //This is a \n line
+  println(raw"This is a \n raw line") //This is a \n line
   val escaped = "This is a \n line"
   println(raw"$escaped") //This is a
                          // line

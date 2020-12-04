@@ -22,6 +22,13 @@ object OOBasics extends App {
 
   //Constructor  - built every time the object is instantiated
   //whatever inside the class brackets runs everytime the class is instantiated
+
+  /* class resume(name:String, age:Int)
+     val x = new resume("basja",90)
+     cannot get resume.name ==> because its not declared as val in class constrctor
+     these are not class member, but class parameters --> only class members can be reference
+
+   */
   class Resume(val name: String, val age: Int){
     val x = 2
     println("I run everytime, when class is instantiated " + (1+5+6+7))
