@@ -12,6 +12,11 @@ object Objects {
   class student {
 
   }
+  //crearting second singleton object
+  object bala {
+    val fullname = "Balamurugan Muthu"
+  }
+  println(bala.fullname)
 
   def main(args: Array[String]): Unit = {
       println("First Line")
@@ -26,6 +31,8 @@ object Objects {
       val far = new student
       val foo = new student
       println(far == foo) //prints false because far and foo are different instances
+
+
 
       println(mary.name) //prints Khadhar Basha
       println(bala.name) //prints Khadhar Basha
