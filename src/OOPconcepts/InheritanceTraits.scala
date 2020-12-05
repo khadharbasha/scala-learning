@@ -3,7 +3,7 @@ package OOPconcepts
 object InheritanceTraits extends App{
 
   //Single class inheritance
-  //         Animal is Super class
+    //         Animal is Super class
   //           Cat is sub class
   //              cat can access all non private members of a super class
   class Animal {

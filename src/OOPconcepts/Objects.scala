@@ -9,9 +9,10 @@ object Objects {
     val name = "Khadhar Basha"
     def canFly:Boolean = false
   }
-  class student {
 
+  class student {
   }
+
   //crearting second singleton object
   object bala {
     val fullname = "Balamurugan Muthu"
